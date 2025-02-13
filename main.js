@@ -3,6 +3,7 @@ const imageOne = document.querySelector(".image-1");
 const imageTwo = document.querySelector(".image-2");
 const btnYes = document.querySelector(".btn-yes");
 const btnNo = document.querySelector(".btn-no");
+const loveMessage = document.getElementById("love-message");
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -39,4 +40,5 @@ btnYes.addEventListener("click", () => {
   btnNo.classList.add("hide");
   imageOne.classList.add("hide");
   imageTwo.classList.remove("hide");
+  loveMessage.classList.remove("hide");
 });
